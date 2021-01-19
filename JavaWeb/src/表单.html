@@ -1,0 +1,75 @@
+<!DOCTYPE html><!--约束-->
+<html lang="en"><!--html标签-->
+<head><!--表示头部信息，一般包含三部分内容，title标签，css样式，js代码-->
+    <meta charset="UTF-8">
+    <title>表单的显示</title>
+</head>
+<body>
+<!--    需求：1、创建一个个人信息注册的表单界面，包含用户名、密码，确认密码，性别（单选）、兴趣爱好（多选），国籍（下拉列表）。
+隐藏域，自我评价（多行文本域）。重置，提交。-->
+    <form>
+        <h1 align="center">用户注册</h1>
+        <table align="center">
+            <tr>
+                <td>用户名称：</td>
+                <td><input type="text" value="李辰煊"><br/></td>
+            </tr>
+
+            <tr>
+                <td>用户密码：</td>
+                <td><input type="password" value="abc" maxlength="6"><br/></td>
+            </tr>
+
+            <tr>
+                <td>确认密码：</td>
+                <td><input type="password" value="abc" maxlength="6"><br/></td>
+            </tr>
+
+            <tr>
+                <td>性别：</td>
+                <td><input type="radio" name="sex" checked="checked">男
+                    <input type="radio" name="sex">女<br/></td>
+            </tr>
+
+            <tr>
+                <td>兴趣爱好：</td>
+                <td><input type="checkbox">Java
+                    <input type="checkbox">Python
+                    <input type="checkbox" checked="checked">C++<br/></td>
+            </tr>
+
+            <tr>
+                <td>国籍：<select>
+                        <option>--请选择国籍--</option>
+                        <option>日本</option>
+                        <option selected="selected">中国</option>
+                        <option>美国</option>
+                        <option>英国</option>
+                        </select><br/></td>
+            </tr>
+
+            <tr>
+                <td>自我评价：</td>
+                <td><textarea rows="10" cols="20">默认值123</textarea><br/></td>
+            </tr>
+
+            <tr>
+                <td><input type="reset" value="abc"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="重置"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="确定"><br/></td>
+            </tr>
+
+            <tr>
+                <td><input type="file"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
